@@ -3,50 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>커피 찌꺼기 방향제 프로젝트</title>
-    <style>
-        body { font-family: sans-serif; margin: 20px; line-height: 1.6; }
-        h1 { color: #333; }
-        p { color: #666; }
-    </style>
+    <title>넥스트젠: 커피 찌꺼기, 새로운 가치를 만들다!</title>
+    <!-- style.css 파일을 연결 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>☕️ 커피 찌꺼기 방향제 프로젝트</h1>
-    <p>버려지는 커피 찌꺼기의 양을 줄이고, 친환경 방향제로 재탄생시키는 멋진 프로젝트입니다!</p>
-    <h2>버려지는 커피 찌꺼기, 얼마나 될까?</h2>
-    <p>매년 엄청난 양의 커피 찌꺼기가 버려지고 있어요... </p>
-    <canvas id="coffeeWasteChart" width="400" height="200"></canvas>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  const ctx = document.getElementById('coffeeWasteChart').getContext('2d');
-  new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: ['2019', '2022', '2025'],
-      datasets: [{
-        label: '커피 찌꺼기 폐기량 (백만 톤/연)',
-        data: [15, 8, 6],
-        borderColor: 'rgba(75, 192, 192, 1)',
-        fill: false,
-        tension: 0.1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: false
-        }
-      }
-    }
-  });
-</script>
+    <header>
+        <h1>☕️ 넥스트젠: 커피 찌꺼기, 새로운 가치를 만들다!</h1>
+        <p>안녕하세요! 넥스트젠 팀입니다. 저희는 버려지는 커피 찌꺼기에 새로운 생명을 불어넣어 환경을 보호하고, 일상에 향기를 더하는 프로젝트를 진행하고 있습니다.</p>
+        <hr> <!-- 가로줄 -->
+    </header>
 
-    <h2>커피 찌꺼기 방향제의 효능</h2>
-    <ul>
-        <li>탈취 효과: 꿉꿉한 냄새를 싹 잡아줘요!</li>
-        <li>습기 제거: 습한 곳에 두면 제습 효과도 있어요!</li>
-        <li>친환경: 버려지는 자원을 활용해서 환경 보호에 기여해요!</li>
-    </ul>
-    <p>더 자세한 내용은 계속 업데이트될 예정입니다!</p>
+    <main>
+        <section class="section-waste">
+            <h2>🗑️ 버려지는 커피 찌꺼기, 얼마나 될까요?</h2>
+            <p>우리가 매일 마시는 커피, 그만큼 많은 양의 커피 찌꺼기가 버려진다는 사실, 알고 계셨나요?</p>
+            <!-- 이미지 경로를 images 폴더 안의 파일명으로 수정 (예: images/coffee_waste_graph.png) -->
+            <img src="images/coffee_waste_graph.png" alt="버려지는 커피 찌꺼기 통계 그래프">
+            <ul>
+                <li>**매년 약 15만 톤**의 커피 찌꺼기가 발생하며, 이 중 대부분이 소각되거나 매립됩니다.</li>
+                <li>소각 시 **온실가스 배출**, 매립 시 **토양 오염**의 원인이 됩니다.</li>
+                <li>이는 환경에 큰 부담을 주고 있어요.</li>
+            </ul>
+            <p>저희 넥스트젠은 이러한 문제에 주목하여, 커피 찌꺼기를 재활용하는 방법을 연구하고 있습니다.</p>
+        </section>
+
+        <section class="section-efficacy">
+            <h2>✨ 커피 찌꺼기 방향제, 어떤 효능이 있을까요?</h2>
+            <p>버려질 뻔한 커피 찌꺼기가 놀라운 효능을 가진 친환경 방향제로 변신합니다!</p>
+            <ul>
+                <li>**강력한 탈취 효과:** 커피 찌꺼기는 다공성 구조로 되어 있어, 악취를 흡착하는 능력이 탁월해요. 냉장고, 신발장, 화장실 등 꿉꿉한 냄새가 나는 곳에 두면 냄새를 싹 잡아줍니다.</li>
+                <li>**천연 제습 효과:** 습기를 흡수하는 성질이 있어, 습한 공간의 습도를 조절하는 데 도움을 줍니다.</li>
+                <li>**은은한 커피 향:** 인공적인 향이 아닌, 자연스러운 커피 향으로 공간을 채워줍니다.</li>
+                <li>**환경 보호:** 버려지는 자원을 재활용하여 쓰레기 감소에 기여하고, 환경 오염을 줄일 수 있습니다.</li>
+            </ul>
+        </section>
+
+        <section class="section-process">
+            <h2>🛠️ 커피 찌꺼기 방향제, 이렇게 만들어요!</h2>
+            <p>저희가 직접 만든 커피 찌꺼기 방향제는 다음과 같은 과정을 거쳐 탄생합니다.</p>
+            <ol>
+                <li>**커피 찌꺼기 수거:** 카페 등에서 버려지는 신선한 커피 찌꺼기를 수거합니다.</li>
+                <li>**건조:** 곰팡이가 생기지 않도록 햇볕이나 전자레인지를 이용해 바싹 말립니다. (수분이 남아있으면 곰팡이가 생길 수 있어요!)</li>
+                <li>**포장:** 잘 건조된 커피 찌꺼기를 다시마 백이나 부직포 주머니에 담아 예쁘게 포장합니다.</li>
+                <li>**배포:** 여러분의 공간에 향기와 환경 보호의 가치를 전달합니다!</li>
+            </ol>
+        </section>
+
+        <section class="section-qr">
+            <h2>📱 QR 코드를 스캔해 보세요!</h2>
+            <p>이 QR 코드를 스캔하면 버려지는 커피 찌꺼기의 양, 방향제의 효능 등 더 자세한 정보를 확인하실 수 있습니다.</p>
+            <!-- 여기에 실제 QR 코드 이미지를 넣으면 돼 -->
+            <img src="images/your_qr_code.png" alt="QR 코드">
+        </section>
+
+        <!-- 팀 소개 섹션 추가 (노션 페이지 참고) -->
+        <section class="section-team">
+            <h2>🧑‍🤝‍🧑 넥스트젠 팀 소개</h2>
+            <p>저희는 열정 넘치는 넥스트젠 팀원들이 함께 이 프로젝트를 진행하고 있습니다.</p>
+            <ul>
+                <li>**팀장:** [팀장 이름] - [역할]</li>
+                <li>**팀원:** [팀원 1 이름] - [역할]</li>
+                <li>**팀원:** [팀원 2 이름] - [역할]</li>
+                <!-- 더 많은 팀원이 있다면 추가 -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>💚 넥스트젠과 함께하는 친환경 라이프</p>
+        <p>저희 넥스트젠은 작은 실천이 큰 변화를 만든다고 믿습니다. 커피 찌꺼기 방향제와 함께 여러분의 일상에 향기를 더하고, 환경 보호에도 동참해 주세요!</p>
+        <p>#넥스트젠 #커피찌꺼기 #친환경 #방향제 #제로웨이스트</p>
+        <p>&copy; 2024 NextNen Project. All rights reserved.</p>
+    </footer>
 </body>
 </html>
