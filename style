@@ -1,0 +1,111 @@
+/* 전체 페이지 기본 스타일 */
+body {
+    font-family: 'Noto Sans KR', sans-serif; /* 한글 폰트 설정 (구글 폰트 사용 추천) */
+    line-height: 1.6; /* 줄 간격 */
+    margin: 0; /* 기본 마진 제거 */
+    padding: 20px; /* 페이지 여백 */
+    background-color: #f9f9f9; /* 배경색 */
+    color: #333; /* 기본 글자색 */
+}
+
+/* 내용이 들어갈 메인 영역의 최대 너비 설정 (노션처럼 가운데 정렬) */
+main, header, footer {
+    max-width: 800px; /* 최대 너비 */
+    margin: 0 auto; /* 가운데 정렬 */
+    padding: 20px;
+    background-color: #fff; /* 흰색 배경 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 그림자 효과 */
+    margin-bottom: 20px; /* 각 섹션 아래 여백 */
+}
+
+/* 제목 스타일 */
+h1, h2, h3 {
+    color: #2c3e50; /* 제목 색상 */
+    margin-top: 0; /* 상단 마진 제거 */
+}
+
+h1 {
+    font-size: 2.5em; /* 메인 제목 크기 */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em; /* 섹션 제목 크기 */
+    border-bottom: 2px solid #eee; /* 아래쪽 경계선 */
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+/* 문단 스타일 */
+p {
+    margin-bottom: 1em;
+}
+
+/* 목록 스타일 */
+ul, ol {
+    margin-bottom: 1em;
+    padding-left: 20px; /* 들여쓰기 */
+}
+
+ul li, ol li {
+    margin-bottom: 0.5em;
+}
+
+/* 가로줄 스타일 */
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 40px 0;
+}
+
+/* 이미지 스타일 */
+img {
+    max-width: 100%; /* 이미지가 부모 요소 너비를 넘지 않도록 */
+    height: auto; /* 비율 유지 */
+    display: block; /* 블록 요소로 만들어서 가운데 정렬 가능하게 */
+    margin: 20px auto; /* 위아래 여백, 가운데 정렬 */
+    border-radius: 5px; /* 모서리 둥글게 */
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    margin-top: 40px;
+}
+
+/* 특정 섹션별 추가 스타일 (필요시) */
+.section-waste {
+    background-color: #f0f8ff; /* 연한 파란색 배경 */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.section-efficacy {
+    background-color: #fffacd; /* 연한 노란색 배경 */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* 반응형 디자인 (모바일 화면 대응) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    main, header, footer {
+        padding: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
